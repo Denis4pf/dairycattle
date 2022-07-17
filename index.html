@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <section>
+        <div class="navHeading">
+            <h2>Monitoring dairy milk production</h2>
+        </div>
+        <div class="Dairy-production">
+            <div class="milk-input">
+                <div class="milk-input-wrapper">
+                    <!-- <form onsubmit="submitFunction()"> -->
+                    <form>
+                        <div id="sheds">
+                            <label for="shed">shed A: milk(litres) per day</label>
+                            <input id="shedA" type="number" min="100" required>
+
+                        </div>
+                        <div id="sheds">
+                            <label for="shed">shed B: milk(litres) per day</label>
+                            <input id="shedB" type="number" min="100" required>
+
+                        </div>
+                        <div id="sheds">
+                            <label for="shed">shed C: milk(litres) per day</label>
+                            <input id="shedC" type="number" min="100" required>
+
+                        </div>
+                        <div id="sheds">
+                            <label for="shed">shed D: milk(litres) per day</label>
+                            <input id="shedD" type="number" min="100" required>
+
+                        </div>
+                        <div id="sheds">
+                            <label for="shed">shed E: milk(litres) per day</label>
+                            <input id="shedE" type="number" min="100" required>
+
+                        </div>
+                        <div id="submitDiv">
+
+                            <button id="Submit" type="button" onclick="submitFunction()">submit</button>
+                        </div>
+                </div>
+
+                </form>
+                <div class="totalProductionDivWrapper">
+                    <h3 id="nav-heading">Total productions</h3>
+
+                    <div id="totalProductionDiv">
+                        <button id="totalProduction" onclick="totalProduction()">Total Production</button>
+
+                    </div>
+                    <div id="productionShedsDiv">
+                        <p id="productionShedA">Your production in Shed A is 0 litres per day </p>
+                        <p id="productionShedB">Your production in Shed B is 0 litres per day </p>
+                        <p id="productionShedC">Your production in Shed C is 0 litres per day </p>
+                        <p id="productionShedD">Your production in Shed D is 0 litres per day </p>
+                        <p id="productionShedE">Your production in Shed E is 0 litres per day </p>
+
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="priceDivWrapper">
+                <h3 id="nav-heading">Total price</h3>
+                <div id="priceDiv">
+                    <label id="priceLabel" for="shed">Brookside price per litre</label>
+                    <input type="number" min="45" required>
+                </div>
+            </div>
+
+
+
+        </div>
+
+
+    </section>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js"
+        integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ=" crossorigin="anonymous"></script>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

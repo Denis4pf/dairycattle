@@ -1,0 +1,43 @@
+.milk-input {
+    padding-bottom: 50px;
+
+}
+
+.milk-input-wrapper {
+    background-color: lightgrey;
+    width: 300px;
+    padding: 50px;
+    margin: 20px;
+}
+
+.totalProductionDivWrapper {
+    background-color: lightgrey;
+    width: 300px;
+    padding: 50px;
+    margin: 20px;
+}
+
+.priceDivWrapper {
+    background-color: lightgrey;
+    width: 300px;
+    padding: 50px;
+    margin: 20px;
+    padding-bottom: 20px;
+}
+
+.Dairy-production {
+
+    padding-top: 30px;
+    padding-left: 30px;
+    align-items: flex-end;
+   
+}
+.navHeading{
+         text-align: center;
+    }
+
+
+#sheds {
+    padding-bottom: 10px;
+    color: black;
+}
