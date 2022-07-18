@@ -6,7 +6,7 @@ Dairy milk production tracker
 # description of program
 a full detailed of milk dairy production website tracker demo, you can access it through the gh-pages by where you can go through the readme.md and on the settings you'll go to the pages where you can access the live link of the project
 # link to the site on GitHub Pages
-denis4pf.github.io/dairycattle/
+https://github.com/Denis4pf/dairycattle
 
 # copyright and license information
 MIT License © 2022 Moringa School. All rights reserved.
