@@ -1,5 +1,5 @@
 .all{
-   background-image: url(https://us.123rf.com/450wm/vladklok/vladklok1803/vladklok180300662/98105351-vector-milk-farming-illustration-summer-rural-landscape-cows-calves-and-design-elements-.jpg?ver=6);
+   background-color: lightgreen;
     padding-left: 40px;
     padding-right: 60px;
     background-position: center;
@@ -9,8 +9,8 @@
     display: flex;
     list-style: none;
     padding-left: 60px;
-    background-color: lightgreen;
-    margin: auto px;
+    background-color: lightgray;
+    
 }
 .menu ul li{
     padding-right: 60px;
@@ -26,7 +26,7 @@
 }
 
 .milk-input-wrapper {
-    background-color: lightgreen;
+    background-color: lightgray;
     width: 300px;
     padding: 50px;
     margin: 30px;
@@ -35,7 +35,7 @@
 }
 
 .totalProductionDivWrapper {
-    background-color: lightgreen;
+    background-color: lightgray;
     width: 300px;
     padding: 50px;
     margin: 20px;
@@ -43,7 +43,7 @@
 }
 
 .priceDivWrapper {
-    background-color: lightgreen;
+    background-color: lightgray;
     width: 300px;
     padding: 50px;
     margin: 20px;
@@ -60,7 +60,7 @@
 }
 .navHeading{
          text-align: left;
-        background-color: lightgreen;
+        background-color: lightgray;
          padding-left: 60px;
     
          font-size: 30px;
@@ -77,7 +77,7 @@
 
 
 .overTime{
-    background-color: lightgreen;
+    background-color: lightgray;
     width: 300px;
     padding: 50px;
     margin: 30px;
@@ -104,7 +104,7 @@
       width: 100%;
     }
   .leapYearReport {
-    background-color: lightgreen;
+    background-color: lightgray;
     width: 300px;
     padding: 50px;
     margin: 30px;
