@@ -3,6 +3,8 @@
     padding-left: 40px;
     padding-right: 60px;
     background-position: center;
+    border-style: inherit;
+    justify-content: center;
 }
 
 .menu ul{ 
