@@ -80,7 +80,7 @@ leapYearReport();
 
 
 
-var display_incomeOverTime_sales = document.getElementById("display_incomeOverTime_sales");
+// var display_incomeOverTime_sales = document.getElementById("display_incomeOverTime_sales");
 
 
 var getIncomeOverTime = function () {
