@@ -6,6 +6,16 @@
     border-style: inherit;
     justify-content: center;
 }
+.get-started{
+    padding-left: 150px;
+}
+.get-started-btn{
+    padding: 20px 35px;
+    background-color: lightgray;
+    color: black;
+    border: 1px solid lightgray;
+    border-radius: 15px;
+}
 
 .menu ul{ 
     display: flex;
