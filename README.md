@@ -3,6 +3,11 @@
 Orina Denis Onwong'a
 # project or program name
 Dairy milk production tracker
+#Technologies Used
+HTML
+CSS
+JS
+Git
 # description of program
 a full detailed of milk dairy production website tracker demo, you can access it through the gh-pages by where you can go through the readme.md and on the settings you'll go to the pages where you can access the live link of the project
 # link to the site on GitHub Pages
