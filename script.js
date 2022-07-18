@@ -164,5 +164,12 @@ var reset = function () {
     location.reload();
 }
 
-
+function generateYearlyReport(buying_rate) {
+    ul.innerHTML = ''
+    Object.keys(days_in_months).forEach((key, index) => {
+        var list1 = document.createElement('li');
+        ul.appendChild(list1);
+        list1.innerHTML = `Total income for ${key} is: ${(days_in_months[key] * total_production) * buying_rate}`;
+    })
+}
 
