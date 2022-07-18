@@ -1,19 +1,41 @@
+.all{
+   background-image: url(https://us.123rf.com/450wm/vladklok/vladklok1803/vladklok180300662/98105351-vector-milk-farming-illustration-summer-rural-landscape-cows-calves-and-design-elements-.jpg?ver=6);
+    padding-left: 40px;
+    padding-right: 60px;
+    background-position: center;
+}
+
+.menu ul{ 
+    display: flex;
+    list-style: none;
+    padding-left: 60px;
+    background-color: lightgreen;
+    margin: auto px;
+}
+.menu ul li{
+    padding-right: 60px;
+}
+
+.menu ul li a{
+    text-decoration: none;
+}
+
 .milk-input {
     padding-bottom: 50px;
 
 }
 
 .milk-input-wrapper {
-    background-color: lightgrey;
+    background-color: lightgreen;
     width: 300px;
     padding: 50px;
-    margin: 20px;
+    margin: 30px;
     float: left;
     padding: 15px; 
 }
 
 .totalProductionDivWrapper {
-    background-color: lightgrey;
+    background-color: lightgreen;
     width: 300px;
     padding: 50px;
     margin: 20px;
@@ -21,7 +43,7 @@
 }
 
 .priceDivWrapper {
-    background-color: lightgrey;
+    background-color: lightgreen;
     width: 300px;
     padding: 50px;
     margin: 20px;
@@ -33,15 +55,79 @@
     padding-top: 30px;
     padding-left: 30px;
     align-items: flex-end;
+
    
 }
 .navHeading{
-         text-align: center;
-         background-color: darkgoldenrod;
+         text-align: left;
+        background-color: lightgreen;
+         padding-left: 60px;
+         font-style: inherits;
+         font-size: 30px;
+        
     }
 
 
 #sheds {
     padding-bottom: 10px;
     color: black;
+
 }
+
+
+
+.overTime{
+    background-color: lightgreen;
+    width: 300px;
+    padding: 50px;
+    margin: 30px;
+    float: left;
+    padding: 25px; 
+    padding-left: 50;
+    
+      
+  }
+  .overTime .title h1{
+    color: black;
+    text-align: start;
+    margin-bottom: 25px;
+  }
+  
+  .input-income{
+    margin: 20px 0;
+      background: transparent;
+      border: 0px;
+      text-align: start;
+      border-bottom: 2px solid black;
+      padding: 10px;
+      color: white;
+      width: 100%;
+    }
+  .leapYearReport {
+    background-color: lightgreen;
+    width: 300px;
+    padding: 50px;
+    margin: 30px;
+    float: left;
+    padding: 25px; 
+    text-align: center;
+    padding: 30px;
+    border-radius: 5px;
+    
+  }
+  .leapYearReport .title h1{
+    color: black;
+    text-align: start;
+    margin-bottom: 25px;
+  }
+  
+  .input-leap{
+    margin: 20px 0;
+      background: transparent;
+      border: 0px;
+      text-align: start;
+      border-bottom: 2px solid black;
+      padding: 10px;
+      color: white;
+      width: 100%;
+  }

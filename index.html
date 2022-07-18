@@ -10,10 +10,22 @@
 
 </head>
 
-<body>
+<body class="all">
     <section>
         <div class="navHeading">
-            <h2>Monitoring dairy milk production</h2>
+            <h2>76ers Dairy</h2>
+        </div>
+
+        <div class="menu">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Breeds</a></li>
+                <li><a href="#">Delivery</a></li>
+                <li><a href="#">Sell</a></li>
+                <li><a href="#">More info</a></li>
+                <li><a href="#">Contact-Us</a></li>
+            </ul>
+
         </div>
         <div class="Dairy-production">
             <div class="milk-input">
@@ -48,6 +60,7 @@
                         <div id="submitDiv">
 
                             <button id="Submit" type="button" onclick="submitFunction()">submit</button>
+                            
                         </div>
                 </div>
 
@@ -70,18 +83,55 @@
                     </div>
                 </div>
             </div>
-
-            <div class="priceDivWrapper">
-                <h3 id="nav-heading">Total price</h3>
-                <div id="priceDiv">
-                    <label id="priceLabel" for="shed">Brookside price per litre</label>
-                    <input type="number" min="45" required>
-                </div>
+              
+            
             </div>
+
+            <div class="overTime" >
+                <div class="title">
+
+                    <input class="btn" type="button" value="Generate Report" onclick="totalProduction()">
+                  <h1>Income Over Time</h1>
+                </div>
+                <div class="production-area">
+                    <div id="display_incomeOverTime_weekly">
+            
+                    </div>
+                    <div id="display_incomeOverTime_yearly">
+                  
+                    </div>
+                </div>
+              </div>
+              <div class="leapYearReport" >
+                <div class="title">
+                    <input class="btn" type="button" value="Generate Report" onclick="totalProduction()">
+                  <h1>Leap Year Report</h1>
+                </div>
+                <div class="production-area">
+                    <div id="display_">
+                      <div id="leapyear"></div>
+            
+                    </div>
+                    <div id="display_">
+                  
+                    </div>
+                </div>
+              </div>
+                <div class="production-area">
+                    <div id="display_">
+            
+                    </div>
+                    <div id="display_">
+                  
+                    </div>
+                </div>
+              </div>
 
 
 
         </div>
+
+
 
 
     </section>
