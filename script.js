@@ -1,86 +1,55 @@
-milkProductions = [];
+var totalProduction = function () {
+    //create an array variable to store the sales per shade in one day
+    var shades = [];
 
-class MilkProduction {
-    constructor(id, quantity, shed, date) {
-        this.id = id;
-        this.quantity = quantity;
-        this.shed = shed;
-        this.date = date;
 
+    //we push the data that the user will give into the array.
+    shades.push(document.getElementById("shade_a").value);
+    shades.push(document.getElementById("shade_b").value);
+    shades.push(document.getElementById("shade_c").value);
+    shades.push(document.getElementById("shade_d").value);
+    shades.push(document.getElementById("shade_e").value);
+
+
+    //the values of the array are hereby tanfered into variables a,b,c,d
+    var [a, b, c, d, e] = shades;
+
+    var displayShadesSales = document.getElementById("display_shades_sales");
+    if (a.length === 0 || b.length === 0 || c.length === 0 || d.length === 0) {
+        displayShadesSales.innerHTML = "<p>Please fill in the values to calculate sales</p>"
+    } else {
+        //we get to convert the user input from string variables, to number variables
+        a = parseFloat(a);
+        b = parseFloat(b);
+        c = parseFloat(c);
+        d = parseFloat(d);
+        e = parseFloat(e);
+        totalProductionCalculation(a, b, c, d, e)
     }
-
 }
 
-function submitFunction() {
-    let quantityShedA = document.getElementById("shedA").value;
-    let quantityShedB = document.getElementById("shedB").value;
-    let quantityShedC = document.getElementById("shedC").value;
-    let quantityShedD = document.getElementById("shedD").value;
-    let quantityShedE = document.getElementById("shedE").value;
+var totalProductionCalculation = function (a, b, c, d, e) {
 
+    var total = a + b + c + d + e;
 
-    let milkProductionshedA = new MilkProduction(1, quantityShedA, "A", new Date());
-    let milkProductionshedB = new MilkProduction(2, quantityShedB, "B", new Date());
-    let milkProductionshedC = new MilkProduction(3, quantityShedC, "C", new Date());
-    let milkProductionshedD = new MilkProduction(4, quantityShedD, "D", new Date());
-    let milkProductionshedE = new MilkProduction(5, quantityShedE, "E", new Date());
+    document.getElementById("results").innerHTML = " <p>Your production in Shed A " +
+        a + " litres per day <br> Your production in Shed B " +
+        b + " litres per day <br> Your production in Shed C " +
+        c + " litres per day <br> Your production in Shed D " +
+        d + " litres per day <br> Your production in Shed E " +
+        e + " litres per day <br><br> "
 
-    milkProductions.push(milkProductionshedA);
-    milkProductions.push(milkProductionshedB);
-    milkProductions.push(milkProductionshedC);
-    milkProductions.push(milkProductionshedD);
-    milkProductions.push(milkProductionshedE);
+    document.getElementById("totals").innerHTML = "<p>The total production is " + total + " litres per day</p>"
 
-    alert("submitted");
+    incomeOverTime(45, 7);
+    incomeOverTime(45, 365);
+    leapYearReport();
+    //getIncomeOverTime()
 }
 
 
-function totalProduction() {
 
-    // loop through all the itmes in the milk productions array
-
-    for (let i = 0; i < milkProductions.length; i++) {
-        // get the production at index
-        let production = milkProductions[i];
-        //UPDATE THE SHED QUANTITIES PARAGRAPHS
-        if (production.shed == "A") {
-            let text = "Your production in Shed A is " + production.quantity + " litres per day";
-            document.getElementById("productionShedA").innerHTML = text;
-        }
-        if (production.shed == "B") {
-            let text = "Your production in Shed B is " + production.quantity + " litres per day";
-            document.getElementById("productionShedB").innerHTML = text;
-        }
-        if (production.shed == "C") {
-            let text = "Your production in Shed C is " + production.quantity + " litres per day";
-            document.getElementById("productionShedC").innerHTML = text;
-        }
-        if (production.shed == "D") {
-            let text = "Your production in Shed D is " + production.quantity + " litres per day";
-            document.getElementById("productionShedD").innerHTML = text;
-        }
-        if (production.shed == "E") {
-            let text = "Your production in Shed E is " + production.quantity + " litres per day";
-            document.getElementById("productionShedE").innerHTML = text;
-        }
-
-    }
-
-}
-
-
-// leap year
-document.getElementById("totals").innerHTML = "<p>The total production is " + total + " litres per day</p>"
-
-incomeOverTime(45, 7);
-incomeOverTime(45, 365);
-leapYearReport();
-//getIncomeOverTime()
-
-
-
-
-// var display_incomeOverTime_sales = document.getElementById("display_incomeOverTime_sales");
+var display_incomeOverTime_sales = document.getElementById("display_incomeOverTime_sales");
 
 
 var getIncomeOverTime = function () {
@@ -164,6 +133,8 @@ var reset = function () {
     location.reload();
 }
 
+
+
 function generateYearlyReport(buying_rate) {
     ul.innerHTML = ''
     Object.keys(days_in_months).forEach((key, index) => {
@@ -172,4 +143,3 @@ function generateYearlyReport(buying_rate) {
         list1.innerHTML = `Total income for ${key} is: ${(days_in_months[key] * total_production) * buying_rate}`;
     })
 }
-

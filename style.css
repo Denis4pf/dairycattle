@@ -1,145 +1,150 @@
-.all{
-   background-image: url(https://imagesvc.meredithcorp.io/v3/mm/image?q=60&c=sc&rect=0%2C100%2C2000%2C1100&poi=%5B1020%2C693%5D&w=2000&h=1000&url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F44%2F2022%2F04%2F27%2Fwhat-happens-to-your-body-if-you-drink-milk-every-day.jpg);
-    padding-left: 40px;
-    padding-right: 60px;
-    background-position: center;
-    border-style: inherit;
-    justify-content: center;
-}
-.get-started{
-    padding-left: 150px;
-}
-.get-started-btn{
-    padding: 20px 35px;
-    background-color: lightgray;
-    color: black;
-    border: 1px solid lightgray;
-    border-radius: 15px;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  font-family: 'Arial', Times, serif sans-serif;
+  padding-left: 10px;
+  padding-top: 10px;
+  
 }
 
-.menu ul{ 
-    display: flex;
-    list-style: none;
-    padding-left: 60px;
-    background-color: lightgray;
-    
-}
-.menu ul li{
-    padding-right: 60px;
+html {
+  scroll-behavior: smooth;
 }
 
-.menu ul li a{
-    text-decoration: none;
+body {
+  background-size: cover;
+  background-image: url(https://imagesvc.meredithcorp.io/v3/mm/image?q=60&c=sc&rect=0%2C100%2C2000%2C1100&poi=%5B1020%2C693%5D&w=2000&h=1000&url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F44%2F2022%2F04%2F27%2Fwhat-happens-to-your-body-if-you-drink-milk-every-day.jpg);
+
+
+  height: 100px;
+  background-color: brown;
 }
 
-.milk-input {
-    padding-bottom: 50px;
-
-}
-
-.milk-input-wrapper {
-    background-color: lightgray;
-    width: 300px;
-    padding: 50px;
-    margin: 30px;
-    float: left;
-    padding: 15px; 
-}
-
-.totalProductionDivWrapper {
-    background-color: lightgray;
-    width: 300px;
-    padding: 50px;
-    margin: 20px;
-    
-}
-
-.priceDivWrapper {
-    background-color: lightgray;
-    width: 300px;
-    padding: 50px;
-    margin: 20px;
-    padding-bottom: 20px;
-}
-
-.Dairy-production {
-
-    padding-top: 30px;
-    padding-left: 30px;
-    align-items: flex-end;
-
-   
+.menu{
+  display: flex;
+  padding: 20px;
+  justify-content: space-between;
 }
 .navHeading{
-         text-align: left;
-        background-color: lightgray;
-         padding-left: 60px;
-    
-         font-size: 30px;
-        
-    }
-
-
-#sheds {
-    padding-bottom: 10px;
-    color: black;
-
+  color: brown;
+  font-size: 20px;
 }
 
-
-
-.overTime{
-    background-color: lightgray;
-    width: 300px;
-    padding: 50px;
-    margin: 30px;
-    float: left;
-    padding: 25px; 
-    padding-left: 50;
-    
-      
-  }
-  .overTime .title h1{
-    color: black;
-    text-align: start;
-    margin-bottom: 25px;
-  }
+.main {
+  position: absolute;
+  top: 250px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  max-width: 550px;
+  padding: 30px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px #0f34d8;
+  background-color: brown;
   
-  .input-income{
-    margin: 20px 0;
-      background: transparent;
-      border: 0px;
-      text-align: start;
-      border-bottom: 2px solid black;
-      padding: 10px;
-      color: white;
-      width: 100%;
-    }
-  .leapYearReport {
-    background-color: lightgray;
-    width: 300px;
-    padding: 50px;
-    margin: 30px;
-    float: left;
-    padding: 25px; 
-    text-align: center;
-    padding: 30px;
-    border-radius: 5px;
-    
-  }
-  .leapYearReport .title h1{
-    color: black;
-    text-align: start;
-    margin-bottom: 25px;
-  }
+}
+
+.output {
+  position: absolute;
+  top: 700px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  max-width: 550px;
+  background-color: brown;
+  padding: 30px;
+  border-radius: 5px;
   
-  .input-leap{
-    margin: 20px 0;
-      background: transparent;
-      border: 0px;
-      text-align: start;
-      border-bottom: 2px solid black;
-      padding: 10px;
-      color: white;
-      width: 100%;
-  }
+}
+
+.overTime {
+  position: absolute;
+  top: 1000px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  max-width: 550px;
+  background-color: brown;
+  padding: 30px;
+  border-radius: 5px;
+  
+}
+
+.leapYearReport {
+  position: absolute;
+  top: 1300px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  max-width: 550px;
+  background-color: brown;
+  padding: 30px;
+  border-radius: 5px;
+}
+
+.output .title h1 {
+  color: black;
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.main .title h1,
+.heading h1 {
+  color: black;
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+h1 {
+  color: black;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.contact-form {
+  display: flex;
+}
+
+.input-fields {
+  display: flex;
+  flex-direction: column;
+  margin-right: 4%;
+}
+
+.input-fields {
+  width: 100%;
+}
+
+.input-fields .input {
+  margin: 10px 0;
+  background: transparent;
+  border: 0px;
+  border-bottom: 2px solid rgb(0, 0, 0);
+  padding: 10px;
+  width: 100%;
+}
+
+::-webkit-input-placeholder {
+  color: black;
+}
+
+::-moz-placeholder {
+
+  color: black;
+}
+
+:-ms-input-placeholder {
+  color: black;
+}
+
+.btn {
+  background-color: brown;
+  text-align: center;
+  padding: 15px;
+  border-radius: 5px;
+  color: black;
+  cursor: pointer;
+  text-transform: uppercase;
+}

@@ -17,118 +17,73 @@
         </div>
 
         <div class="menu">
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Breeds</a></li>
-                <li><a href="#">Delivery</a></li>
-                <li><a href="#">Sell</a></li>
-                <li><a href="#">More info</a></li>
-                <li><a href="#">Contact-Us</a></li>
-            </ul>
+    
+                <a href="#">Home</a>
+                <a href="#">Breeds</a>
+                <a href="#">Delivery</a>
+                <a href="#">Sell</a>
+                <a href="#">More info</a>
+                <a href="#">Contact-Us</a>
             
-
         </div>
-        <div class="Dairy-production">
-            <div class="milk-input">
-                <div class="milk-input-wrapper">
-                    <!-- <form onsubmit="submitFunction()"> -->
-                    <form>
-                        <div id="sheds">
-                            <label for="shed">shed A: milk(litres) per day</label>
-                            <input id="shedA" type="number" min="100" required>
-
-                        </div>
-                        <div id="sheds">
-                            <label for="shed">shed B: milk(litres) per day</label>
-                            <input id="shedB" type="number" min="100" required>
-
-                        </div>
-                        <div id="sheds">
-                            <label for="shed">shed C: milk(litres) per day</label>
-                            <input id="shedC" type="number" min="100" required>
-
-                        </div>
-                        <div id="sheds">
-                            <label for="shed">shed D: milk(litres) per day</label>
-                            <input id="shedD" type="number" min="100" required>
-
-                        </div>
-                        <div id="sheds">
-                            <label for="shed">shed E: milk(litres) per day</label>
-                            <input id="shedE" type="number" min="100" required>
-
-                        </div>
-                        <div id="submitDiv">
-
-                            <button id="Submit" type="button" onclick="submitFunction()">submit</button>
-                            
-                        </div>
-                </div>
-
-                </form>
-                <div class="totalProductionDivWrapper">
-                    <h3 id="nav-heading">Total productions.</h3>
-
-                    <div id="totalProductionDiv">
-                        <button id="totalProduction" onclick="totalProduction()">Total Production</button>
-
-                    </div>
-                    <div id="productionShedsDiv">
-                        <p id="productionShedA">Your production in Shed A is 0 litres per day </p>
-                        <p id="productionShedB">Your production in Shed B is 0 litres per day </p>
-                        <p id="productionShedC">Your production in Shed C is 0 litres per day </p>
-                        <p id="productionShedD">Your production in Shed D is 0 litres per day </p>
-                        <p id="productionShedE">Your production in Shed E is 0 litres per day </p>
-
-
-                    </div>
+            <div class="title">
+                <h1>Amount</h1>
+            </div>
+            <div class="contact-form">
+                <div class="input-fields">
+                    <input type="text" class="input" placeholder="Shade A" id="shade_a" name="shade_a">
+                    <input type="text" class="input" placeholder="Shade B" id="shade_b" name="shade_b">
+                    <input type="text" class="input" placeholder="Shade C" id="shade_c" name="shade_c">
+                    <input type="text" class="input" placeholder="Shade D" id="shade_d" name="shade_d">
+                    <input type="text" class="input" placeholder="Shade E" id="shade_e" name="shade_e">
+                    <input class="btn" type="button" value="Generate Report" onclick="totalProduction()">
+                    <input class="btn" type="button" value="Reload" onclick="reset()">
                 </div>
             </div>
-              
-            
+        </div>
+        <div class="output">
+            <div class="title">
+                <h1>Daily Output</h1>
             </div>
+            <div class="production-area">
+                <div id="results">
+                </div>
+                <div id="totals">
+                </div>
+            </div>
+        </div>
+        <div class="background image">
+            <img src="./home-1-slide-1.jpg">
+        </div>
+        <div class="overTime">
+            <div class="title">
+                <h1>Income Generated</h1>
 
-            <div class="overTime" >
-                <div class="title">
+            </div>
+            <div class="production-area">
+                <div id="display_incomeOverTime_weekly">
 
-                    <input class="btn" type="button" value="Generate Report" onclick="totalProduction()">
-                  <h1>Income Over Time</h1>
                 </div>
-                <div class="production-area">
-                    <div id="display_incomeOverTime_weekly">
-            
-                    </div>
-                    <div id="display_incomeOverTime_yearly">
-                  
-                    </div>
-                </div>
-              </div>
-              <div class="leapYearReport" >
-                <div class="title">
-                    <input class="btn" type="button" value="Generate Report" onclick="totalProduction()">
-                  <h1>Leap Year Report</h1>
-                </div>
-                <div class="production-area">
-                    <div id="display_">
-                      <div id="leapyear"></div>
-            
-                    </div>
-                    <div id="display_">
-                  
-                    </div>
-                </div>
-              </div>
-                <div class="production-area">
-                    <div id="display_">
-            
-                    </div>
-                    <div id="display_">
-                  
-                    </div>
-                </div>
-              </div>
+                <div id="display_incomeOverTime_yearly">
 
+                </div>
+            </div>
+        </div>
+        <div class="leapYearReport">
+            <div class="title">
+                <h1>Yearly Report</h1>
+            </div>
+            <div class="production-area">
+                <div id="display_">
+                    <div id="leapyear"></div>
 
+                </div>
+                <div id="display_">
+
+                </div>
+            </div>
+        </div>
+        <div id="display_">
 
         </div>
 
@@ -136,7 +91,6 @@
 
 
     </section>
-
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js"
         integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ=" crossorigin="anonymous"></script>
 
